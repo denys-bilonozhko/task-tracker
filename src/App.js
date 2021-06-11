@@ -69,7 +69,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="container d-flex flex-column p-0 col-10 col-xs-12 mt-3">
       <Header onAdd={setShowAddTask} showAdd={showAddTask} />
       {showAddTask && <AddTask onAdd={addTask} />}
       {tasks.length > 0 ? (
