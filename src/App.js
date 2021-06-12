@@ -2,6 +2,7 @@ import Header from './components/Header';
 import { useState, useEffect } from 'react';
 import Tasks from './components/Tasks';
 import AddTask from './components/AddTask';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const [showAddTask, setShowAddTask] = useState(false);
@@ -75,7 +76,7 @@ function App() {
       {tasks.length > 0 ? (
         <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} />
       ) : (
-        'No Tasks'
+        <p className="d-flex justify-content-center">No Tasks</p>
       )}
     </div>
   );
