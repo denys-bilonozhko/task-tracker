@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Button from './UI/Button';
 
 const AddTask = ({ onAdd }) => {
   const [text, setText] = useState('');
@@ -56,7 +57,7 @@ const AddTask = ({ onAdd }) => {
         />
       </div>
       <div className="d-grid gap-2 col-12 mx-auto">
-        <input className="btn btn-success" type="submit" value="Save Task" />
+        <Button className="btn-success btn btn-lg" type="submit">Save Task</Button>
       </div>
     </form>
   );
